@@ -96,6 +96,8 @@ AbstractUser es una clase que trae toda la funcionalidad de los usuarios de Djan
     Luego tenemos que hacer la view `register_user` para mostrar el formulario. Para eso colocamos el siguiente código en `todoapp/views.py`:
   
     ```python
+   from todoapp import views
+    
    def register_user(request):
        return render(request,"todoapp/register_user.html")
     ```
